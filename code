@@ -1,0 +1,9 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+arraySize = raw_input()
+x = map(float,raw_input().strip().split())
+y = map(float, raw_input().strip().split())
+summation = 0
+for index in range(0, len(x)):
+    summation += x[index] * y[index]
+weightedMean = summation / sum(y)
+print(round(weightedMean,1)) 
